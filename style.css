@@ -1,0 +1,153 @@
+#pagetitle > h1 > span,
+#pagetitle > hr{
+	display: none;
+}
+
+.table {
+    width: 100%;
+    margin-top: 60px;
+}
+.table tr {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.table tbody tr {
+    min-height: 58px;
+}
+
+.table td {
+    padding: 10px;
+    vertical-align: middle;
+}
+.table tr:hover {
+    background-color: rgba(0,0,0,.05);
+}
+
+.link-download{
+    display: block;
+    font-size: 1rem;
+    line-height: 2.4;
+    padding: 0 1rem;	
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.link-download:hover{
+    color: #ffffff;
+    background: #f04646;	
+    transition: 300ms;
+}
+
+.table tr.count_zero {
+    border-bottom: 1px solid transparent;
+}
+
+.table tr.count_zero td{
+    color: #f04646;
+}
+
+.table tr.count_zero:hover {
+    background-color: rgba(0,0,0,0);
+}
+
+.table thead tr,
+.table thead tr:hover {
+    background-color: #1e283a;
+}
+
+.table thead td{
+    color: #ffffff;
+}
+
+.check label {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    font-size: 1.6rem;
+    color: #444642;
+    position: relative;
+    line-height: 1.2;
+    margin: 0;
+    cursor: pointer;
+}
+
+.check label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.check label i {
+    display: block;
+    height: 16px;
+    width: 16px;
+    border: 1px solid #dbdbdb;
+    background: #fff;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    border-radius: 3px;
+}
+
+.check label input:checked + i {
+    background: #f04646;
+    border-color: #f04646;
+}
+
+.table tfoot tr,
+.table tfoot tr:hover{
+	background: #d1d1d1;
+}
+
+.table tfoot .list-info{
+	margin: 0 !important;
+    padding: 0 !important;
+}
+
+.table tfoot .list-info li{
+	margin: 0 15px!important;
+    float: left;
+}
+
+.table tfoot .list-info li:before{
+	display: none !important;
+	content: "" !important;
+}
+
+.table tfoot .list-info li span{
+
+}
+
+.table tfoot .list-info .label-info{
+	color: #000000;
+}
+
+.table tfoot .list-info .control-info{
+
+}
+
+.link-download-all{
+	line-height: 44px;
+    margin: 0px;
+    display: inline-block;
+    cursor: pointer;
+    color: #000000;
+}
+
+.link-download-hidden{
+	display: none;
+}
+.cntrl-padd-td{
+	padding: 0px !important;
+}
+
+@media only screen and (max-width: 850px){
+    .table td 
+    {
+        padding: 5px;    
+    }
+
+    .check label {        
+        padding: 0 0 0 20px;
+    }    
+}    
